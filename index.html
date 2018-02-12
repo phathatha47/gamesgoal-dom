@@ -1,0 +1,364 @@
+		<!DOCTYPE html>
+		<html lang="es">
+		<head>
+			<meta charset="UTF-8">
+			<title>GamesGoal</title>
+			<meta name="author" content="Santiago Rengifo">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" type="text/css" href="css/estilos.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+			<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.js">
+		</head> 
+		<body onload="slider(),logged(),crearUsuarios()">
+			<!-- Menu -->
+			<div class="menu" >
+				<div class="cerrar" >
+					<img src="img/iconos/close.png" alt="" title="Cerrar">
+				</div>
+				<div>
+					<form>
+						<input type="search" class="form-control mr-sm-2" placeholder="Buscar...">
+					</form>
+				</div>
+				<button class="redirigir btn btn-warning" >Catálogo</button>
+				<div class="btn-group">
+				  <button type="button" class="btn btn-primary">Facebook</button>
+				  <button type="button" class="btn btn-danger">Youtube</button>
+				</div>
+				<div class="panel-group" id="accordion">
+				    <div class="panel panel-default">
+				      <div class="panel-heading">
+				        <h4 class="panel-title">
+				          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="btn btn-success">Nuestra historia</a>
+				        </h4>
+				      </div>
+				      <div id="collapse1" class="panel-collapse collapse in">
+				        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+				      </div>
+				    </div>
+				 </div> 
+			</div>
+			<div class="cuerpo container-fluid">
+				<div class="header container-fluid row">
+
+					
+					<div class="logo col-sm|md|lg|xl-auto">
+						<a href="">GamesGoal</a>
+					</div>
+					<div class="loggin col-sm|md|lg|xl-auto">
+						<img src="img/iconos/login.png" alt="" title="Inicio sesion" class="img-fluid" >
+						<p></p>
+					</div>
+					<div class=" carrito col-sm|md|lg|xl-auto">
+						<img src="img/iconos/carrito-de-la-compra.png" alt="" title="Carrito" class="img-fluid">
+					</div>
+					<div class="buscar col-sm|md|lg|xl-auto">
+						<img src="img/iconos/menu.png" alt="" title="Buscar" class="img-fluid">
+					</div>
+				</div>
+				<section class="container-fluid">
+					<article class="">
+						<!-- Primer Div-->
+						<div class="bienvenida">
+							<p>
+								<span>GamesGoal&#169;</span><br>
+								Somos una empresa especializada en la venta de teléfonos móviles libres de altas prestaciones y al mejor precio.Tenemos a disposición las mejores marcas, nuevos modelos y recien salidos al mercado con calidad y soporte garantizados.
+							</p>
+						</div>
+
+						<!--Carrusel de productos-->
+						<!-- Segundo Div-->
+						<div class="segDiv">
+							<div class="titulo row">
+								<h1 class="col-sm|md|lg|xl-auto">Recien llegados</h1>
+								<p class="col-sm|md|lg|xl-auto">Gama de productos que tienen una reciente salida al mercado con altas prestaciones</p>
+							</div>
+							<div class="contenedorCarrusel">
+								<div>
+									<img src="img/iconos/flechaI.png" class="mvI" alt="">
+								</div>
+								<div class="carrusel" >
+									<div>
+										<img src="img/GAMA_MEDIA/cute-galaxy.jpg" alt="">
+										<div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											</p>
+											<a class='redirigir btn btn-danger'>Más</a>
+										</div>
+									</div>
+									<div>
+										<img src="img/GAMA_MEDIA/cute.jpg" alt="">
+										<div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											</p>
+											<a class='redirigir btn btn-danger'>Más</a>
+										</div>
+									</div>
+									<div>
+										<img src="img/GAMA_MEDIA/iphone.jpg" alt="">
+										<div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											</p>
+											<a class='redirigir btn btn-danger'>Más</a>
+										</div>
+									</div>
+									<div>
+										<img src="img/GAMA_MEDIA/cute-iphone.jpg" alt="">
+										<div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											</p>
+											<a class='redirigir btn btn-danger'>Más</a>
+										</div>
+									</div>
+									<div>
+										<img src="img/GAMA_MEDIA/galaxy.jpg" alt="">
+										<div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											</p>
+											<a class='redirigir btn btn-danger'>Más</a>
+										</div>
+									</div>
+									<div>
+										<img src="img/GAMA_MEDIA/super-iphone.jpg" alt="">
+										<div>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											</p>
+											<a class='redirigir btn btn-danger'>Más</a>
+										</div>
+									</div>
+								</div>
+								<div>
+									<img src="img/iconos/flechaD.png" class="mvD" alt="" >							
+								</div>
+							</div>
+
+							<div class="notas">
+								<p><i>*Los articulos expuestos son ejemplos y pueden no coincidir con el articulo físico*</i></p>
+							</div>
+						</div>
+
+						<!--Slider de productos innovadores-->
+						<!-- Tercer Div-->
+
+						<div class="container-fluid">
+
+							<div class="titulo row">
+								<h1 class="col-sm|md|lg|xl-auto">Innovaciones</h1>
+								<p class="col-sm|md|lg|xl-auto">Móviles que destacan por su incursión innovadora</p>
+							</div>
+							<div class="slidertrue">
+								<div class="">
+									<a class="btn btn-danger" href="#nada" title="3G RAM 16GB PROC-X " data-toggle="popover" data-trigger="focus" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." data-placement="bottom">Mostrar mas</a>
+									<img src="img/GAMA_ALTA/hydrogen2.jpg" alt="" class="imagen" />
+								</div>
+								
+								<div>
+									<a class="btn btn-danger" href="#nada" title="3G RAM 16GB PROC-X " data-toggle="popover" data-trigger="focus" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." data-placement="bottom">Mostrar mas</a>
+									<img src="img/GAMA_ALTA/hydrogen3.jpg" alt="" class="imagen img-fluid" />
+								</div>
+								<div>
+									<a class="btn btn-danger" href="#nada" title="3G RAM 16GB PROC-X " data-toggle="popover" data-trigger="focus" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." data-placement="bottom">Mostrar mas</a>
+									<img src="img/GAMA_ALTA/hydrogen.jpg" alt="" class="imagen img-fluid" />
+								</div> 
+							</div>
+							<div class="notas">
+								<p><i>*Los articulos anteriores tiene un stock muy limitado y al momento de compra pueden no estar disponibles*</i></p>
+							</div>
+						</div>
+
+						<!--Cuarto Div-->
+
+						<div class="contenerBaraja container-fluid">
+							<div class="titulo row">
+								<h1 class="col-sm|md|lg|xl-auto">Imperdibles</h1>
+								<p class="col-sm|md|lg|xl-auto">Móviles que son muy apreciados y siempre permanecen con liston alto</p>
+							</div>
+							<div class="">
+								<h2>Primeros siempre</h2>
+								<div class="row">
+									<div class="card col-md-4 col-sm-4 col-lg-4  ">
+										<img src="img/GAMA_MEDIA/cute-iphone.jpg" alt="" >
+										<div>
+											<h3 class="card-title" >Modelo X</h3>
+											<a class="btn btn-danger" href="#nada" title="3G RAM 16GB PROC-X " data-toggle="popover" data-trigger="focus" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." data-placement="bottom">Más</a>
+										</div>
+									</div>
+									<div class="card col-md-4 col-sm-4 col-lg-4  ">
+										<img src="img/GAMA_MEDIA/cute-iphone.jpg" alt="" >
+										<div>
+											<h3 class="card-title" >Modelo X</h3>
+											<a class="btn btn-danger" href="#nada" title="3G RAM 16GB PROC-X " data-toggle="popover" data-trigger="focus" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." data-placement="bottom">Más</a>
+										</div>
+									</div>
+									<div class="card col-md-4 col-sm-4 col-lg-4  ">
+										<img src="img/GAMA_MEDIA/cute-iphone.jpg" alt="" >
+										<div>
+											<h3 class="card-title" >Modelo X</h3>
+											<a class="btn btn-danger" href="#nada" title="3G RAM 16GB PROC-X " data-toggle="popover" data-trigger="focus" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." data-placement="bottom">Más</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="">
+								<h2>Inolvidables</h2>
+								<div class="row">
+									<div class="card col-md-4 col-sm-4 col-lg-4  ">
+										<img src="img/GAMA_MEDIA/galaxy.jpg" alt="" >
+										<div>
+											<h3 class="card-title" >Modelo X</h3>
+											<a class="btn btn-danger" href="#nada" title="3G RAM 16GB X-REX" data-toggle="popover" data-trigger="focus" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." data-placement="bottom">Más</a>
+										</div>
+									</div>
+									<div class="card col-md-4 col-sm-4 col-lg-4  ">
+										<img src="img/GAMA_MEDIA/galaxy.jpg" alt="" >
+										<div>
+											<h3 class="card-title" >Modelo X</h3>
+											<a class="btn btn-danger" href="#nada" title="3G RAM 16GB PROC-X " data-toggle="popover" data-trigger="focus" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." data-placement="bottom">Más</a>
+										</div>
+									</div>
+									<div class="card col-md-4 col-sm-4 col-lg-4  ">
+										<img src="img/GAMA_MEDIA/galaxy.jpg" alt="" >
+										<div>
+											<h3 class="card-title" >Modelo X</h3>
+											<a class="btn btn-danger" href="#nada" title="3G RAM 16GB PROC-X " data-toggle="popover" data-trigger="focus" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." data-placement="bottom">Más</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							
+
+							<div class="notas">
+								<p><i>*Los articulos expuestos son ejemplos y pueden no coincidir con el articulo físico*</i></p>
+							</div>
+
+
+						</div>
+
+
+						<!--  Footer  -->
+						<div class="cajaComentarios container-fluid" >
+							<h2>Nuestros clientes dicen</h2>
+							<!--Comentarios de usuario-->
+							<div class="comentarios row" ></div>
+	
+						</div>
+						<div class="entradaTexto ">
+							<div>
+								<h4>¿Te gustaria dejarnos un comentario? </h4>
+							</div>
+							<div class="cajaEnvioComentario">
+								 <div class="form-group">
+								  <label for="comment">Comenta:</label>
+								  <textarea class="form-control" rows="5" id="comment"></textarea>
+								</div> 
+								<button class="enviarComentario btn btn-danger">Comentar</button>
+							</div>
+						</div>
+
+						<footer class="container-fluid">
+							
+
+							<div class="row secciones">
+
+								<div class="footer-pad">
+									<h2>Sobre Nosotros</h2>
+									<ul class="list-unstyled">
+										<li><a class='redirigir'>Objetivos</a></li>
+										<li><a class='redirigir'>Modo de trabajo</a></li>
+										<li><a class='redirigir'>Valores</a></li>
+									</ul>
+								</div>
+								<div class="footer-pad">
+									<h2>Móviles</h2>
+									<ul class="list-unstyled">
+										<li><a class='redirigir'>Outlet</a></li>
+										<li><a class='redirigir'>Ofertas</a></li>
+										<li><a class='redirigir'>Catálogo</a></li>
+									</ul>
+								</div>
+								<div class="footer-pad">
+									<h2>Soporte</h2>
+									<ul class="list-unstyled">
+										<li><a class='redirigir'>Envios</a></li>
+										<li><a class='redirigir'>Garantias</a></li>
+										<li><a class='redirigir'>Perfil</a></li>
+										<li><a class='redirigir'>¿Necesitas ayuda?</a></li>
+									</ul>
+										
+								</div>
+								<div class="footer-pad">
+									<h2>Visitanos</h2>
+									<ul class="list-unstyled">
+										<li><a class='redirigir col'>Madrid</a></li>
+										<li><a class='redirigir col'>Valencia</a></li>
+									</ul>
+
+								</div>
+
+							</div>
+							<div class="reglas row">
+								<a class='redirigir'>Contacto</a>
+								<a class='redirigir'>Accesibilidad</a>
+								<a class='redirigir'>Politica de uso y privacidad</a>
+								<a href="index.html">GamesGoal&#169;</a>
+							</div>
+							<div class="subir">
+								<img src="img/iconos/right-chevron.png" alt="">
+							</div>
+						</footer>
+
+					</article>
+					<div class="condiciones col">
+						<p>En complimiento del Real Decreto-ley 13/2012, si continua navegando estará aceptando el uso de cookies</p>
+						<a href="http://politicadecookies.com/">Mas información</a>
+					</div>
+
+				</section>
+			</div>
+					<button id="#modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="display: none">
+					    ALGO
+					 </button>
+				<div class="modal fade" id="myModal">
+				    <div class="modal-dialog modal-sm">
+				      <div class="modal-content">
+				      
+				        <!-- Modal Header -->
+				        <div class="modal-header">
+				          <h4 class="modal-title">Oops</h4>
+				          <button type="button" class="close" data-dismiss="modal">&times;</button>
+				        </div>
+				        
+				        <!-- Modal body -->
+				        <div class="modal-body">
+				          Primero debes registrarte
+				        </div>
+				        
+				        <!-- Modal footer -->
+				        <div class="modal-footer">
+				          <button type="button" class="btn btn-secondary" data-dismiss="modal">Vale</button>
+				        </div>
+				        
+				      </div>
+    			</div>
+
+
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+			<script src="js/index.js"></script>
+			<script src="js/dom.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+				    $('[data-toggle="popover"]').popover();
+				});
+			</script>
+			<script src="formularios/js/scripts.js"></script>
+		</body>
+		</html>
