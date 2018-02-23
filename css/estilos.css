@@ -105,6 +105,20 @@ div.menu {
         width: 50%;
         height: 40px; }
 
+div.objetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  div.objetos div.producto {
+    color: black;
+    margin: 10px 2%;
+    border: 1px solid grey;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; }
+
 div.cerrar {
   right: 1%; }
   div.cerrar img {
@@ -569,6 +583,9 @@ section {
 /*
 Reglas media
 */
+@media screen and (max-width: 768px) {
+  div.objetos > div.producto {
+    width: 100%; } }
 @media screen and (max-width: 550px) {
   div.carrito * {
     display: none; }
@@ -602,6 +619,9 @@ Reglas media
 
   div.menu {
     width: 60%;
-    right: -70%; } }
+    right: -70%; }
+
+  div.objetos > div.producto {
+    width: 1000%; } }
 
 /*# sourceMappingURL=estilos.css.map */
