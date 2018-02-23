@@ -1,3 +1,36 @@
+# Genearación de productos con peticiones AJAX
+	
+## Utilización
+* **Nota: para la realización de pruebas se ha utilizado el servidor JSON SERVER proporcionado**.
+* El contenido de este directorio debe guardarse en una carpeta **public**. Desde este directorio lanzar el comando de inicio de servicio.
+
+* Se lanza desde la carpeta contenedora :
+
+* json-server --watch ruta_del_archivo_json, ejemplo: **json-server --watch public/js/productos.json**.
+
+* Se ha creado un archivo JSON con los datos necesarios. Se encuentra ubicado en la carpeta **js/productos.json**.
+
+* Se ha descargadado con anterioridad el paquete de **JSON SERVER**.
+
+* Lo que se puede buscar es : **Modelo  T,V,W,X,Y,Z**
+
+
+
+## Peticiones FETCH y MutationObserver
+1. El proceso se realiza desde el archivo **busqueda.js**. Con el método **fecth** de javascript podemos acceder al json alojado en el directorio, eso nos devuelve el objeto **JSON** que posteriormente convertiremos a objeto manipulable con Javascript.
+<br> 1.1 Además las peticiones se realizan con una la terminación ,proporcionada por JSON server, propiedad_a_buscar ***_like***. Para poder acceder a la propiedad, en este caso se ha realizado así: **/productos?id_like" + entradaDeUsuario**.
+
+2. Una vez tenemos el **array** con los resultados, lo recorremos mediante un **for** para generar las cajas de productos. En caso de no tener ninguna coincidencia dentro pues se mostraria un mensaje con la cadena de **"Ninguna coincidencia"**.
+
+3. Para la generación de cajas de productos se utilizado **append** de Jquery y para detectar las clases que se les otorga, además notar los cambios realizados en DOM, concretamente en la caja donde irán los productos encontrados, 
+se utiliza **MutationObserver**, y se genera la funcion **observer** para notar los cambios. Se encuentra ubicado en el archivo **index.js**
+
+
+## Peticiones paises mediante JSON externo
+1. El procedimiento se mantiene en la función **listaPaises** dentro del archivo **dom.js**. De igual forma, se recibe un objeto y este se procesa como un objeto con un bucle **for in** y se genera una opción dentro del campo países en el formulario.
+
+
+
 
 # Manipulación del DOM
 
