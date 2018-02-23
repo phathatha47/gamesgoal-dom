@@ -119,4 +119,20 @@
 		});
 
 
+		// Función para detectar cambios durante las búsquedas
+		var observer = new MutationObserver(function(mutations) {
+					$('.redirigir').click(function(event) {
+						console.log('funciona')
+						location.href = 'errores/index.html'
+					});			  
+		});
+		var observerConfig = {
+			attributes: true, 
+			childList: true, 
+			characterData: true 
+		};
+
+		var targetNode = document.getElementsByClassName('objetos')[0];
+		observer.observe(targetNode, observerConfig);
+
 		
